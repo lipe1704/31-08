@@ -1,0 +1,19 @@
+/* Desenvolva um programa em C que peça ao usuário para digitar um número inteiro positivo e
+imprima todos os números pares entre 0 (zero) e o número digitado. Use um laço do-while.
+*/
+#include <stdio.h>
+int main () {
+    int a;
+    printf ("insira um número inteiro positivo : ");
+    scanf ("%i", &a);
+    if (a<0){
+        printf ("erro");
+        return 0;
+    }
+    do{
+        if (a%2==0){
+            printf ("%i ", a);
+        }
+        a-=1;
+    }while(a>=0);
+}

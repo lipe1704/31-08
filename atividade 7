@@ -1,0 +1,16 @@
+/* Escreva um programa em C que leia diversos números e mostre quantas vezes o número 10 foi
+digitado. O valor 0 (zero) é o código de fim de entrada. */
+#include <stdio.h>
+int main () {
+    int a=1;
+    int contador = -1;
+    while (a!=0){
+        printf ("informe um número : ");
+        scanf ("%i", &a);
+        if (a%10==0){
+            contador+=1;
+        }
+    }
+    printf ("o número 10 foi digitado %i vezes", contador);
+    return 0;
+}

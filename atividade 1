@@ -1,0 +1,12 @@
+/* 1. Escreva um programa em C que usa um laço do tipo for para imprimir a seguinte sequência de
+números: 1 2 4 8 16 32 64 128 256 */
+#include <stdio.h>
+int main () {
+    int i;
+    int numero = 1;
+    for (i = 1; i <= 9; i++){
+        printf ("%i ", numero);
+        numero*=2;
+    }
+    return 0;
+}

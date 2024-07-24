@@ -1,0 +1,20 @@
+/* Faça um programa em C que leia diversos números e mostrar quantos deles são ímpares. O
+programa deve encerrar a leitura de valores após o valor -999 ser registrado */
+#include <stdio.h>
+int main(void){
+    int num, cont = -1;
+
+    do{
+        printf ("informe um numero: ");
+        scanf ("%d", &num);
+        if (num % 2 != 0){
+            cont++;
+        }
+    
+    } while (num != -999);
+    
+    printf ("Quantidade de numeros impares: %d", cont);
+    printf ("\n \n");
+    
+    return 0;
+}

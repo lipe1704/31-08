@@ -1,0 +1,14 @@
+/*Escreva um programa em C que apresente os resultados das potências de 3, variando do expoente
+0 até o expoente 15.*/
+#include <stdio.h>
+int main(void){
+    int expoente, resultado = 1;
+
+        printf ("Informe o expoente de 3: \n ");
+        for (expoente = 0; expoente <=15; expoente++){
+            printf ("3^%i = %i \n", expoente, resultado);
+            resultado*=3;
+
+        }
+    return 0;
+}

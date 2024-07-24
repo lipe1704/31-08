@@ -1,0 +1,24 @@
+/* Faça um programa que leia três notas para cada um dos vinte alunos de uma turma e escreva a
+média aritmética de cada aluno */
+#include <stdio.h>
+int main () {
+    int nota, soma, i;
+    float media;
+    int contador = 1;
+    for (i=1; i<=3; i++){
+        printf ("aluno %i", contador);
+        printf ("\ninforme a nota %i : ", i);
+        scanf ("%i", &nota);
+        soma+=nota;
+        if (i%3==0){
+            i=0;
+            media=soma/3.0;
+            printf ("a media do aluno %i é : %.2f\n", contador, media);
+            contador++;
+            media=0;
+            soma=0;
+        }if(contador==21){
+            return 0;
+        }
+    }
+}

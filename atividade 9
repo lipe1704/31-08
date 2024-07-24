@@ -1,0 +1,30 @@
+/* Crie um programa que apresente o resultado de uma potência de uma base qualquer elevada a um
+expoente qualquer (ex.: BE). O resultado deve ser calculado através de um laço de repetição. A
+função pow não deve ser utilizada. */
+#include <stdio.h>
+int main(void){
+    
+    int i;
+    int base, expoente; 
+    int potencia, aux;
+    printf("\n informe a base:");
+    scanf("%i", &base);
+    printf("\n informe o expoente:");
+    scanf("%i", &expoente);
+    aux=base;
+    if (expoente ==0){
+        printf("1");
+    }
+    else if  (expoente==1){
+        printf("%i", base);
+    }
+    else{
+        for (i=2; i<=expoente;i++){
+            potencia=base*aux;
+            base=potencia;
+        }
+        printf("%i", potencia);
+    }
+   
+    return 0;
+}

@@ -1,0 +1,20 @@
+/* Escreva um programa em C que calcule a média de uma sequência de números inteiros digitados
+pelo usuário. O programa deve pedir ao usuário para digitar os números até que ele digite um
+número negativo. Use um laço while */
+#include <stdio.h>
+int main () {
+    int a, soma=0, contador=0;
+    float media;
+    while (1){
+        printf ("informe o número : ");
+        scanf ("%i", &a);
+        if (a<0){
+            break;
+        }
+        soma+=a;
+        contador++;
+    }
+    media=soma/contador;
+    printf ("a media é : %.2f", media);
+    return 0;
+}
